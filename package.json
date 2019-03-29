@@ -1,0 +1,22 @@
+{
+  "name": "rohkea-team",
+  "version": "1.0.0",
+  "description": "Hackeando la desigualdad, hackaton 30/marzo/19",
+  "main": "index.js",
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run slint && npm run htmlhint",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JazminDominguez/rohkea-team--HackeandoLaDesigualdad.git"
+  },
+  "author": "Andrea Cruz, Hameyalli Elizalde, Jazmín Domínguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JazminDominguez/rohkea-team--HackeandoLaDesigualdad/issues"
+  },
+  "homepage": "https://github.com/JazminDominguez/rohkea-team--HackeandoLaDesigualdad#readme"
+}
