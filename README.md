@@ -15,8 +15,21 @@ En realidad, 42 por ciento de las mujeres mexicanas encuestadas renunció a su e
 # Hallazgos
 Durante la investigación llegamos a los siguientes hallazgos:
 Nos dimos cuenta que las mujeres se sienten incomprendidas y menospreciadas en el ambiente laboral donde se encuentran. La mayoría de las veces es porque no valoran su trabajo o por actitudes y comentarios machistas por parte de sus superiores. Haciendo que para la mujer sea imposible obtener un puesto mejor pagado y tener un crecimiento laboral éxitoso.
-También llegamos a la conclusión de que necesitan un espacio en donde logren sentirse escuchadas, en donde además, especialistas o profesionistas en el tema logren darles una orientación y un seguimiento a sus problemas.
+También llegamos a la conclusión de que necesitan un espacio en donde logren sentirse escuchadas, en donde además, especialistas o profesionistas en el tema, logren darles una orientación y un seguimiento a sus problemas.
 
+### El reto de diseño
+
+**¿CÓMO PODRÍAMOS HACER VISIBLE LA DESIGUALDAD LABORAL EN MÉXICO?**
+
+### Solución
+Para dar solución a la problemática anteriormente planteada buscamos crear una aplicación que logre cubrir estas necesidades: 
+
+-  Un foro con ambiente seguro, en donde puedan buscar ayuda
+-  Dar seguimiento y orientación a través de voluntarias especialistas en el tema
+-  Publicar y denunciar casos de manera anónima y segura
+-  Aportar a la comunidad datos estadísticos que servirán de consulta
+-  Poder consultar un mapa en donde se localizarán casos reales de desigualdad
+- Que todos los casos se hagan visible para crear un impacto de cambio
 
 
 ## Prototipo Marvel
@@ -24,4 +37,9 @@ También llegamos a la conclusión de que necesitan un espacio en donde logren s
 [Aquí](https://marvelapp.com/5e3j41f/screen/55106818)
 ### Alta fidelidad
 [Aquí](https://marvelapp.com/5e3j41f/screen/55122517)
+
+### Autoras:
+-  Andrea Cruz
+-  Hameyalli Elizalde
+-  Jazmín Domínguez
 
