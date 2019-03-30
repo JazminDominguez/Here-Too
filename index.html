@@ -2,35 +2,65 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Point STEAM</title>
+    <link rel="icon" type="image" href="./assets/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Here Too</title>
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Fuentes -->
+    <!-- Estilos -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/style.css">
+    <!-- Firebase-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
 </head>
 
 <body>
 
-    <nav class="mi-nav">
+    <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
+            <div class="container"> <a href="#" class="brand-logo">Logo</a></div>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><i
+                        class="fas fa-bars" color=#fffff></i></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#/primera">Primera</a></li>
-                <li><a href="#/segunda">Segunda</a></li>
-                <li><a href="#/tercera">Tercera</a></li>
+                <li class="menuButtons"><a href="#/primera">Primera</a></li>
+                <li class="menuButtons"><a href="#/segunda">Segunda</a></li>
+                <li class="menuButtons"><a href="#/tercera">Tercera</a></li>
+                <li class="menuButtons"><a href="" onclick="logOut()"> Cerrar sesión</a></li>
+                <li id="loginButton" class="menuButtons"><a
+                        class="waves-effect waves-yellow lighten-4 btn purple accent-3" href="#/primera">Login</a></li>
             </ul>
         </div>
     </nav>
+    <ul class="sidenav sidenav-color" id="mobile-demo">
+            <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-user-friends"></i>Foro</a>
+            </li>
+            <li class="menuButtons"><a class="sidenav-close" href="#/segunda"><i class="fas fa-user-astronaut"></i>Mi
+                    perfil</a></li>
+            <li class="menuButtons"><a class="sidenav-close" href="#/tercera"><i
+                        class="fas fa-user-friends"></i>Comunidad Steam</a></li>
+            <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-calendar-alt"></i>Próximos
+                    Eventos</a></li>
+            <li class="menuButtons"><a href="" onclick="logOut()">Cerrar Sesión</a></li>
+            <li id="loginButtonsideNav"><a class="waves-effect waves-yellow lighten-4 btn purple accent-3"
+                    href="#segunda">Login</a></li>
+        </ul>
+        <!-- Termina navbar -->
+        
+
 
     <div id="vista"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="js/libreria.js"></script>
-    <script src="js/controlador.js"></script>
-    <script src="js/router.js"></script>
+    <script src="./src/js/libreria.js"></script>
+    <script src="./src/js/app.js"></script>
+    <script src="./src/js/controlador.js"></script>
+    <script src="./src/js/router.js"></script>
 
 </body>
 
