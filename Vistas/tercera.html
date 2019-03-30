@@ -3,28 +3,44 @@
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s6">
-                    <input id="complaint" type="text" class="validate">
+                    <input id="title" type="text" class="validate">
                     <label for="complaint">Título</label>
                 </div>
             </div>
             <div class="row">
+                    <div class="input-field col s4">
+                        <input id="age" type="text" class="validate">
+                        <label for="complaint">Edad</label>
+                    </div>
+                </div>
+            <div class="row">
                 <div class="input-field col s12">
-                    <input id="description" type="text" class="validate">
+                    <input id="complaint" type="text" class="validate">
                     <label for="description">descripción</label>
                 </div>
             </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="type_of" type="text" class="validate">
-                    <label for="type_of">Tipo de violencia</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="type_of" type="text" class="validate">
-                    <label for="type_of">Tipo de violencia</label>
-                </div>
-            </div>
+            <div class="col s8 m6 l4">
+                    <select id="type_of_violence" class="browser-default">
+                     <option value="Choose your option">Tipo de Violencia</option>
+                     <option value="nivel1">Chantajes/Mentiras/Ignorar/Menospreciar</option>
+                     <option value="nivel2">Ofender/Humillar/Intimidar</option>
+                     <option value="nivel3">Agredir/Empujar/Acosar</option>
+                     <option value="nivel4">Golpear/Amenazar/Abusar</option>
+                   </select>
+                 </div>
+                 
+                 <div  class="col s8 m6 l4">
+                        <select id="place class="browser-default">
+                         <option value="Choose your option">Zona Laboral</option>
+                         <option value="zona1">Roma/Condesa</option>
+                         <option value="zona2">Polanco</option>
+                         <option value="zona3">Coyoacán/Pedregal</option>
+                         <option value="zona4">Narvarte/Nápoles/Del Valle</option>
+                         <option value="zona5">Santa Fe</option>
+                         <option value="zona6">Tlalpan</option>
+                       </select>
+                     </div>
+            <input type="button" id="guardar">Guardar<input>
         </form>
     </div>
 </div>
