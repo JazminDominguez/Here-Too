@@ -1,2 +1,98 @@
+<div id="denuncia">
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="title" type="text" class="validate">
+                    <label for="title">Título</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s4">
+                    <input id="age" type="text" class="validate">
+                    <label for="age">Edad</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="complaint" type="text" class="validate">
+                    <label for="complaint">descripción</label>
+                </div>
+            </div>
+            <div class="col s8 m6 l4">
+                    <div class="section">
+                <select id="type_of_violence" class="browser-default">
+                    <option value="Choose your option">Tipo de Violencia</option>
+                    <option value="nivel1">Chantajes/Mentiras/Ignorar/Menospreciar</option>
+                    <option value="nivel2">Ofender/Humillar/Intimidar</option>
+                    <option value="nivel3">Agredir/Empujar/Acosar</option>
+                    <option value="nivel4">Golpear/Amenazar/Abusar</option>
+                </select>
+            </div>
+            </div>
 
-            <a id="save_bttn" class="waves-effect waves-light btn">Guardar</a>
+            <div class="col s8 m6 l4">
+                    <div class="section">
+                <select id="place" class="browser-default">
+                    <option value="Choose your option">Zona Laboral</option>
+                    <option value="zona1">Roma/Condesa</option>
+                    <option value="zona2">Polanco</option>
+                    <option value="zona3">Coyoacán/Pedregal</option>
+                    <option value="zona4">Narvarte/Nápoles/Del Valle</option>
+                    <option value="zona5">Santa Fe</option>
+                    <option value="zona6">Tlalpan</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="col s8 m6 l4">
+                    <div class="section">
+                <select id="work_profile" class="browser-default">
+                    <option value="Choose your option">Perfil Laboral</option>
+                    <option value="wp1">Administrativo(Secretaría, Recursos Humanos, contabilidad, logistica,etc)</option>
+                    <option value="wp2">Operativo. (ventas, mensajería, capacitadores, operadores telefonicos, técnicos de servicio, etc)</option>
+                    <option value="wp3">Directivo (Director Ejecutivo, de operaciones, comercial, administradores, gerentes comerciales, etc)</option>
+                    <option value="wp4">Independiente o freelance</option>
+                    <option value="wp5">Outsourcing</option>
+                </select>
+                </div>
+            </div>
+
+
+            <div class="col s8 m6 l4">
+                    <div class="section">
+                <select id="work_sector" class="browser-default">
+                    <option value="Choose your option">Sector</option>
+                    <option value="ws1">Construcción e inmobiliario</option>
+                    <option value="ws2">Logística y transporte</option>
+                    <option value="ws3">Prensa y medios de comunicación</option>
+                    <option value="ws4">Tecnología y telecomunicaciones.</option>
+                    <option value="ws5">Hotelería y entretenimiento</option>
+                    <option value="ws5">Servicios financieros</option>
+                    <option value="ws6">Independiente o freelance</option>
+                </select>
+                </div>  
+            </div>
+            <div class="col s8 m6 l4">
+            <p> ¿Denunciaste ante las autoridades?
+                    <div class="col s8 m6 l4">
+                <label>
+                    <input type="checkbox" id="yes" class="filled-in"/>
+                    <span for="yes" >Sí</span>
+                </label>
+                </div>
+                <div class="col s8 m6 l4">
+                <label>
+                    <input type="checkbox" id="no" class="filled-in"/>
+                    <span for="no">No</span>
+                </label>
+            </div>
+            </p>
+            </div>
+            <div class="col s8 m6 l4">
+                    <div class="section">
+            <input type="submit" class="waves-effect waves-light btn" id="guardar" value="Enviar"></input> </div>
+            </div>  
+        </form>
+    </div>
+</div>
