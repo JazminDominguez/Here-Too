@@ -26,4 +26,4 @@ login: () => {
 
       };
       ui.start('#firebaseui-auth-container', uiConfig);
-    })()
+    })()}
