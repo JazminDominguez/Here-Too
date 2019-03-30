@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
-        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-        <script>
-          // Initialize Firebase
-          var config = {
-            apiKey: "AIzaSyCaQXd4NhOLzQm3vN1GZtdKIkVXPHLv0qI",
-            authDomain: "rohkea-c1475.firebaseapp.com",
-            databaseURL: "https://rohkea-c1475.firebaseio.com",
-            projectId: "rohkea-c1475",
-            storageBucket: "rohkea-c1475.appspot.com",
-            messagingSenderId: "322104747884"
-          };
-          firebase.initializeApp(config);
-        </script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCaQXd4NhOLzQm3vN1GZtdKIkVXPHLv0qI",
+        authDomain: "rohkea-c1475.firebaseapp.com",
+        databaseURL: "https://rohkea-c1475.firebaseio.com",
+        projectId: "rohkea-c1475",
+        storageBucket: "rohkea-c1475.appspot.com",
+        messagingSenderId: "322104747884"
+    };
+    firebase.initializeApp(config);
+</script>
 
 <head>
     <meta charset="utf-8">
@@ -20,7 +20,7 @@
     <title>HERE TOO</title>
     <link rel="icon" type="image" href="src\footage\favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <!-- HERE API -->
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
     <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
@@ -29,18 +29,19 @@
     <!-- Iconos -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fuentes -->
     <!-- Estilos -->
     <link rel="stylesheet" type="text/css" media="screen" href="./src/css/style.css">
-  
+
 </head>
 
 <body>
 
     <nav>
-        <div class="nav-wrapper  purple darken-2">
-            <div class="container"> <a href="#" class="brand-logo">HERE TOO</a></div>
+        <div class="nav-wrapper  grey lighten-2">
+            <div class="container"> <a href="#" class="brand-logo"><img src="src\footage\logo.png" alt="logo1cm"
+                        class="logo-login"></a></div>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><i
                         class="fas fa-bars" color=#fffff></i></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -60,7 +61,8 @@
                 perfil</a></li>
         <li class="menuButtons"><a class="sidenav-close" href="#/tercera"><i
                     class="fas fa-user-friends"></i>Denuncia</a></li>
-        <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-calendar-alt"></i>Consejos</a></li>
+        <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i
+                    class="fas fa-calendar-alt"></i>Consejos</a></li>
         <li class="menuButtons"><a href="" onclick="logOut()">Cerrar Sesión</a></li>
         <li id="loginButtonsideNav"><a class="waves-effect waves-yellow lighten-4 btn purple accent-3"
                 href="#segunda">Login</a></li>
@@ -71,31 +73,29 @@
 
     <div id="vista" class="container"></div>
 
-   <!-- Footer -->
-  <footer class="index-footer">
+    <!-- Footer -->
+    <footer class="index-footer teal lighten-1">
         <div class="container">
-          <div class="row">
-    
-            <div class="col s12 center m6 l6">
+            <div class="row">
+
+                <div class="col s12 center m6 l6">
                     <div class="footer-copyright">
-                            <div class="container">
-                              <div class="col offset-s4 offset-l4 offset-m4">
-
-                      
-                      
-                                <a class="waves-effect waves-light btn"
-                                  href="https://github.com/jaurinu/CDMX007-social-network" target=”_blank” title="Github Point STEAM"> <i class="material-icons">favorite</i></a>
-                                <a href="" title="Instagram Point Steam"
-                                class="waves-effect waves-light btn"><i class="material-icons">chat_bubble_outline</i>
+                        <div class="container">
+                            <div class="col">
+                                <a class="waves-effect waves-light btn-large" href="#/primera" target=”_blank”
+                                    title="Github Point STEAM"> <i class="material-icons">favorite</i></a>
+                                <a href="#/segunda" title="Instagram Point Steam" class="waves-effect waves-light btn-large"><i
+                                        class="material-icons">chat_bubble_outline</i>
                                 </a>
-                                <a href="" title="Twiter Point Steam " class="waves-effect waves-light btn"> <i class="material-icons">all_inclusive</i></a>
-                              </div>
-          </div>
-        </div>
-      </footer>
-          
+                                <a href="#/tercera" title="Twiter Point Steam " class="waves-effect waves-light btn-large"> <i
+                                        class="material-icons">all_inclusive</i></a>
+                            </div>
+                        </div>
+                    </div>
+    </footer>
 
-        
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./src/js/libreria.js"></script>
     <script src="./src/js/app.js"></script>
