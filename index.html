@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCaQXd4NhOLzQm3vN1GZtdKIkVXPHLv0qI",
+        authDomain: "rohkea-c1475.firebaseapp.com",
+        databaseURL: "https://rohkea-c1475.firebaseio.com",
+        projectId: "rohkea-c1475",
+        storageBucket: "rohkea-c1475.appspot.com",
+        messagingSenderId: "322104747884"
+    };
+    firebase.initializeApp(config);
+</script>
 
 <head>
     <meta charset="utf-8">
@@ -8,10 +21,8 @@
     <link rel="icon" type="image" href="./assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- HERE API -->
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" 
-    type="text/javascript" charset="utf-8"></script>
-    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" 
-    type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
     <!-- Compiled and minified CSS materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Iconos -->
@@ -22,7 +33,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./src/css/style.css">
     <!-- Firebase-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+
 </head>
 
 <body>
@@ -43,20 +54,20 @@
         </div>
     </nav>
     <ul class="sidenav sidenav-color" id="mobile-demo">
-            <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-user-friends"></i>Foro</a>
-            </li>
-            <li class="menuButtons"><a class="sidenav-close" href="#/segunda"><i class="fas fa-user-astronaut"></i>Mi
-                    perfil</a></li>
-            <li class="menuButtons"><a class="sidenav-close" href="#/tercera"><i
-                        class="fas fa-user-friends"></i>Comunidad</a></li>
-            <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-calendar-alt"></i>Próximos
-                    Eventos</a></li>
-            <li class="menuButtons"><a href="" onclick="logOut()">Cerrar Sesión</a></li>
-            <li id="loginButtonsideNav"><a class="waves-effect waves-yellow lighten-4 btn purple accent-3"
-                    href="#segunda">Login</a></li>
-        </ul>
-        <!-- Termina navbar -->
-        
+        <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-user-friends"></i>Foro</a>
+        </li>
+        <li class="menuButtons"><a class="sidenav-close" href="#/segunda"><i class="fas fa-user-astronaut"></i>Mi
+                perfil</a></li>
+        <li class="menuButtons"><a class="sidenav-close" href="#/tercera"><i
+                    class="fas fa-user-friends"></i>Comunidad</a></li>
+        <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-calendar-alt"></i>Próximos
+                Eventos</a></li>
+        <li class="menuButtons"><a href="" onclick="logOut()">Cerrar Sesión</a></li>
+        <li id="loginButtonsideNav"><a class="waves-effect waves-yellow lighten-4 btn purple accent-3"
+                href="#segunda">Login</a></li>
+    </ul>
+    <!-- Termina navbar -->
+
 
 
     <div id="vista" class="container"></div>

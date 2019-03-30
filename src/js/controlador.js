@@ -4,7 +4,7 @@ libreria.controlador('miControlador', {
 
     },
     segundap: () => {
-
+    
     },
     primerap: () => {
         let bttn = document.getElementById('button')
