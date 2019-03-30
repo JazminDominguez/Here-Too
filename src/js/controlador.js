@@ -1,39 +1,42 @@
 libreria.controlador('miControlador', {
-  
+
     prueba: () => {
 
+        db = firebase.firestore();
+
+        let title = document.getElementById('title').value;
+        let age = document.getElementById('age').value;
+        let description = document.getElementById('complaint').value;
+        let violence = document.getElementById('type_of_violence').value;
+        let place = document.getElementById('place').value;
+        let workProfile = document.getElementById('work_profile').value;
+        let sector = document.getElementById('work_sector').value;
+        let denounced = document.getElementById('yes').checked;
+
+        let saveButton = document.getElementById('guardar')
+        saveButton.addEventListener('click', () => {
+            db.collection("denuncias").add({
+                    title: title,
+                    age: age,
+                    description: description,
+                    type_of_violence: violence,
+                    place: place,
+                    sector: sector,
+                    denounced: denounced,
+                    profile: workProfile,
+                })
+                .then(function (docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                    let title = document.getElementById('age').value = '';
+                    let age = document.getElementById('name-place').value = '';
+                })
+                .catch(function (error) {
+                    console.error("Error adding document: ", error);
+                });
+        })
     },
-    segundap: () => {
-     /*       (function () {
-                var ui = new firebaseui.auth.AuthUI(firebase.auth());
-                var uiConfig = {
-                    callbacks: {
-                        signInSuccessWithAuthResult: function (authResult, redirectUrl) {
+    segundap: () => {},
 
-                            return true;
-                        },
-                        uiShown: function () {
-                            document.getElementById('loader').style.display = 'none';
-                        }
-                    },
-                    signInFlow: 'popup',
-                    signInSuccessUrl: 'index.html#/tercera',
-                    signInOptions: [
-                        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-                        firebase.auth.EmailAuthProvider.PROVIDER_ID,
-                    ],
-
-
-                    // Terms of service url.
-                    tosUrl: 'index.html#/tercera',
-                    // Privacy policy url.
-                    //privacyPolicyUrl: '<your-privacy-policy-url>'
-
-                };
-                ui.start('#firebaseui-auth-container', uiConfig);
-            })()*/
-        
-    },
     primerap: () => {
 
         let bttn = document.getElementById('button')
