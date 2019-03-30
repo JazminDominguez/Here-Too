@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+        <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCaQXd4NhOLzQm3vN1GZtdKIkVXPHLv0qI",
+            authDomain: "rohkea-c1475.firebaseapp.com",
+            databaseURL: "https://rohkea-c1475.firebaseio.com",
+            projectId: "rohkea-c1475",
+            storageBucket: "rohkea-c1475.appspot.com",
+            messagingSenderId: "322104747884"
+          };
+          firebase.initializeApp(config);
+        </script>
 
 <head>
     <meta charset="utf-8">
@@ -8,9 +21,7 @@
     <link rel="icon" type="image" href="./assets/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Firebase-->
-    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css"/>
+    
     <!-- HERE API -->
     <script src="http://js.api.here.com/v3/3.0/mapsjs-core.js" 
     type="text/javascript" charset="utf-8"></script>
@@ -30,8 +41,8 @@
 <body>
 
     <nav>
-        <div class="nav-wrapper">
-            <div class="container"> <a href="#" class="brand-logo">Logo</a></div>
+        <div class="nav-wrapper  purple darken-2">
+            <div class="container"> <a href="#" class="brand-logo">HERE TOO</a></div>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"><i
                         class="fas fa-bars" color=#fffff></i></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -50,7 +61,7 @@
             <li class="menuButtons"><a class="sidenav-close" href="#/segunda"><i class="fas fa-user-astronaut"></i>Mi
                     perfil</a></li>
             <li class="menuButtons"><a class="sidenav-close" href="#/tercera"><i
-                        class="fas fa-user-friends"></i>Comunidad Steam</a></li>
+                        class="fas fa-user-friends"></i>Comunidad</a></li>
             <li class="menuButtons"><a class="sidenav-close" href="#/primera"><i class="fas fa-calendar-alt"></i>Próximos
                     Eventos</a></li>
             <li class="menuButtons"><a href="" onclick="logOut()">Cerrar Sesión</a></li>

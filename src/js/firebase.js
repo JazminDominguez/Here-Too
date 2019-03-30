@@ -1,4 +1,4 @@
-let app_fireBase = {};
+/*let app_fireBase = {};
 (function(){
   // Initialize Firebase
   var config = {
@@ -11,4 +11,6 @@ let app_fireBase = {};
   };
   firebase.initializeApp(config);
   app_fireBase = firebase;
-})()
+  console.log(app_fireBase.name);  // "[DEFAULT]"
+  console.log(firebase.name);
+})()*/

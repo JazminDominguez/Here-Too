@@ -1,11 +1,10 @@
 libreria.controlador('miControlador', {
   
     prueba: () => {
-        alert('Control OK')
+
     },
     segundap: () => {
-        
-            (function () {
+     /*       (function () {
                 var ui = new firebaseui.auth.AuthUI(firebase.auth());
                 var uiConfig = {
                     callbacks: {
@@ -32,9 +31,11 @@ libreria.controlador('miControlador', {
 
                 };
                 ui.start('#firebaseui-auth-container', uiConfig);
-            })()
-        },
+            })()*/
+        
+    },
     primerap: () => {
+        
         let bttn = document.getElementById('button')
         bttn.addEventListener('click', () => {
             // Initialize the platform object:
