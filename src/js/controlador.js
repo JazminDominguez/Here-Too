@@ -1,4 +1,5 @@
 libreria.controlador('miControlador', {
+    
     prueba: () => {
         alert('Control OK')
     },
