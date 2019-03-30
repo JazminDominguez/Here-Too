@@ -24,3 +24,4 @@ También llegamos a la conclusión de que necesitan un espacio en donde logren s
 [Aquí](https://marvelapp.com/5e3j41f/screen/55106818)
 ### Alta fidelidad
 [Aquí](https://marvelapp.com/5e3j41f/screen/55122517)
+
