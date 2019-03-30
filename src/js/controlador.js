@@ -1,10 +1,10 @@
 libreria.controlador('miControlador', {
 
     prueba: () => {
-        alert('Control OK')
+
     },
     segundap: () => {
-        alert('Soy la segunda pagina')
+
     },
     primerap: () => {
         let bttn = document.getElementById('button')
