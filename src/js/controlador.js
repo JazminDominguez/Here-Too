@@ -1,42 +1,39 @@
 libreria.controlador('miControlador', {
-
-    login: () => {
-        (function () {
-          var ui = new firebaseui.auth.AuthUI(firebase.auth());
-          var uiConfig = {
-            callbacks: {
-              signInSuccessWithAuthResult: function (authResult, redirectUrl) {
-    
-                return true;
-              },
-              uiShown: function () {
-                document.getElementById('loader').style.display = 'none';
-              }
-            },
-            signInFlow: 'popup',
-            signInSuccessUrl: 'index.html#/forum',
-            signInOptions: [
-              firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-              firebase.auth.EmailAuthProvider.PROVIDER_ID,
-            ],
-    
-    
-            // Terms of service url.
-            tosUrl: 'index.html#/forum',
-            // Privacy policy url.
-            //privacyPolicyUrl: '<your-privacy-policy-url>'
-    
-          };
-          ui.start('#firebaseui-auth-container', uiConfig);
-        })()
-    },    
-    
+  
     prueba: () => {
         alert('Control OK')
     },
     segundap: () => {
-        alert('Soy la segunda pagina')
-    },
+        
+            (function () {
+                var ui = new firebaseui.auth.AuthUI(firebase.auth());
+                var uiConfig = {
+                    callbacks: {
+                        signInSuccessWithAuthResult: function (authResult, redirectUrl) {
+
+                            return true;
+                        },
+                        uiShown: function () {
+                            document.getElementById('loader').style.display = 'none';
+                        }
+                    },
+                    signInFlow: 'popup',
+                    signInSuccessUrl: 'index.html#/tercera',
+                    signInOptions: [
+                        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+                        firebase.auth.EmailAuthProvider.PROVIDER_ID,
+                    ],
+
+
+                    // Terms of service url.
+                    tosUrl: 'index.html#/tercera',
+                    // Privacy policy url.
+                    //privacyPolicyUrl: '<your-privacy-policy-url>'
+
+                };
+                ui.start('#firebaseui-auth-container', uiConfig);
+            })()
+        },
     primerap: () => {
         let bttn = document.getElementById('button')
         bttn.addEventListener('click', () => {
@@ -55,10 +52,11 @@ libreria.controlador('miControlador', {
                 maptypes.normal.map, {
                     zoom: 10,
                     center: {
-                        lng: 13.4,
-                        lat: 52.51
+                        lng: -99.163277,
+                        lat: 19.421129
                     }
-                });
+                }
+            );
         })
 
     }
