@@ -1,12 +1,30 @@
 libreria.controlador('miControlador', {
 
     prueba: () => {
+        let saveButton = document.getElementById('save_bttn')
+        saveButton.addEventListener('click', () => {
+            db.collection("denuncias").add({
+                    title: title,
+                    age: age,
+                    description: description,
+                    violence: violence,
+                    place: place,
+                })
+                .then(function (docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                    let textInput = document.getElementById('age').value = '';
+                    let nametInput = document.getElementById('name-place').value = '';
 
+                })
+                .catch(function (error) {
+                    console.error("Error adding document: ", error);
+                });
+        })
     },
-    segundap: () => {
-    
-    },
+    segundap: () => {},
+
     primerap: () => {
+
         let bttn = document.getElementById('button')
         bttn.addEventListener('click', () => {
             // Initialize the platform object:
