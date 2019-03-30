@@ -1,5 +1,5 @@
 libreria.controlador('miControlador', {
-    
+
     prueba: () => {
         alert('Control OK')
     },
@@ -27,7 +27,8 @@ libreria.controlador('miControlador', {
                         lng: -99.163277,
                         lat: 19.421129
                     }
-                });
+                }
+            );
         })
 
     }
