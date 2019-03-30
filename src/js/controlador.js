@@ -35,12 +35,13 @@ libreria.controlador('miControlador', {
                 });
         })
     },
-    segundap: () => {},
+    segundap: () => {
+        let zonaRoma = document.getElementById('zona1')
+        let zonaPol = document.getElementById('zona2')
+        let zonaNarv = document.getElementById('zona3')
+        let zonaSta = document.getElementById('zona4')
 
-    primerap: () => {
-
-        let bttn = document.getElementById('button')
-        bttn.addEventListener('click', (event) => {
+        zonaRoma.addEventListener('click', (event) => {
 
             event.preventDefault();
             // Initialize the platform object:
@@ -56,7 +57,7 @@ libreria.controlador('miControlador', {
             var map = new H.Map(
                 document.getElementById('mapContainer'),
                 maptypes.normal.map, {
-                    zoom: 10,
+                    zoom: 14,
                     center: {
                         lng: -99.163277,
                         lat: 19.421129
@@ -64,6 +65,80 @@ libreria.controlador('miControlador', {
                 }
             );
         })
+        zonaPol.addEventListener('click', (event) => {
 
-    }
+            event.preventDefault();
+            // Initialize the platform object:
+            var platform = new H.service.Platform({
+                'app_id': '{HsEaGUYIAiD705s8wzM4}',
+                'app_code': '{ixHZvY2JGZsqHg92o9chOg}'
+            });
+
+            // Obtain the default map types from the platform object
+            var maptypes = platform.createDefaultLayers();
+
+            // Instantiate (and display) a map object:
+            var map = new H.Map(
+                document.getElementById('mapContainer'),
+                maptypes.normal.map, {
+                    zoom: 14,
+                    center: {
+                        lng: -99.19742,
+                        lat: 19.42926
+                    }
+                }
+            );
+        })
+  
+        zonaNarv.addEventListener('click', (event) => {
+
+            event.preventDefault();
+            // Initialize the platform object:
+            var platform = new H.service.Platform({
+                'app_id': '{HsEaGUYIAiD705s8wzM4}',
+                'app_code': '{ixHZvY2JGZsqHg92o9chOg}'
+            });
+
+            // Obtain the default map types from the platform object
+            var maptypes = platform.createDefaultLayers();
+
+            // Instantiate (and display) a map object:
+            var map = new H.Map(
+                document.getElementById('mapContainer'),
+                maptypes.normal.map, {
+                    zoom: 14,
+                    center: {
+                        lng: -99.14824,
+                        lat: 19.40133
+                    }
+                }
+            );
+        })
+
+        zonaSta.addEventListener('click', (event) => {
+
+            event.preventDefault();
+            // Initialize the platform object:
+            var platform = new H.service.Platform({
+                'app_id': '{HsEaGUYIAiD705s8wzM4}',
+                'app_code': '{ixHZvY2JGZsqHg92o9chOg}'
+            });
+
+            // Obtain the default map types from the platform object
+            var maptypes = platform.createDefaultLayers();
+
+            // Instantiate (and display) a map object:
+            var map = new H.Map(
+                document.getElementById('mapContainer'),
+                maptypes.normal.map, {
+                    zoom: 14,
+                    center: {
+                        lng: -99.25831,
+                        lat: 19.36926
+                    }
+                }
+            );
+        })
+    },
+    primerap: () => {}
 })
