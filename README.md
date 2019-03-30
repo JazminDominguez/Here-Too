@@ -10,5 +10,5 @@ En realidad, 42 por ciento de las mujeres mexicanas encuestadas renunció a su e
 ¿POR QUÉ LAS MUJERES RENUNCIAN A SU TRABAJO, LIMITANDO SU CRECIMIENTO LABORAL?
 
 ## Prototipo Marvel
-[Baja Fidelidad] (https://marvelapp.com/5e3j41f/screen/55106818)
-[Alta Fidelidad] (https://marvelapp.com/5e3j41f/screen/55122517)
+![Baja Fidelidad] (https://marvelapp.com/5e3j41f/screen/55106818)
+![Alta Fidelidad] (https://marvelapp.com/5e3j41f/screen/55122517)
