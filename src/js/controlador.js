@@ -35,9 +35,11 @@ libreria.controlador('miControlador', {
         
     },
     primerap: () => {
-        
+
         let bttn = document.getElementById('button')
-        bttn.addEventListener('click', () => {
+        bttn.addEventListener('click', (event) => {
+
+            event.preventDefault();
             // Initialize the platform object:
             var platform = new H.service.Platform({
                 'app_id': '{HsEaGUYIAiD705s8wzM4}',
