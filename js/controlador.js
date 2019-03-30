@@ -23,8 +23,8 @@ libreria.controlador('miControlador', {
                 maptypes.normal.map, {
                     zoom: 10,
                     center: {
-                        lng: 13.4,
-                        lat: 52.51
+                        lng: -99.163277,
+                        lat: 19.421129
                     }
                 });
         })
